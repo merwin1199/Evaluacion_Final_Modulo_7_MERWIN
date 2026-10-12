@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merwin Sport, tienda online de deportes y ejercicio.">
+    <title>Merwin Sport | Tienda Deportiva</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">MERWIN SPORT</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal" aria-expanded="false"
+                        aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categorias.html">Categorías</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero text-center text-white d-flex align-items-center">
+            <div class="container">
+                <p class="text-uppercase fw-bold">Supera tus límites</p>
+                <h1 class="display-3 fw-bold">Entrena con actitud</h1>
+                <p class="lead">
+                    Encuentra los accesorios y equipos que necesitas
+                    para alcanzar tus objetivos.
+                </p>
+                <a href="productos.html" class="btn btn-warning btn-lg mt-3">
+                    Explorar productos
+                </a>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <h2>Equípate para dar lo mejor</h2>
+                <p>Calidad, comodidad y motivación para cada entrenamiento.</p>
+            </div>
+
+            <div id="carruselDeportivo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
+                             class="d-block w-100 imagen-carrusel"
+                             alt="Gimnasio equipado para entrenar">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=80"
+                             class="d-block w-100 imagen-carrusel"
+                             alt="Persona entrenando con pesas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
+                             class="d-block w-100 imagen-carrusel"
+                             alt="Entrenamiento físico">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carruselDeportivo" data-bs-slide="prev"
+                        aria-label="Imagen anterior">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carruselDeportivo" data-bs-slide="next"
+                        aria-label="Imagen siguiente">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container py-4">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="beneficio p-4 h-100">
+                        <h3>🏋️ Equipamiento</h3>
+                        <p>Artículos para entrenar en casa o en el gimnasio.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="beneficio p-4 h-100">
+                        <h3>👟 Comodidad</h3>
+                        <p>Accesorios pensados para acompañar tu actividad física.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="beneficio p-4 h-100">
+                        <h3>💪 Motivación</h3>
+                        <p>Prepárate para cada nuevo reto deportivo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-1">Merwin Sport - Tienda online de deportes y ejercicio</p>
+        <p class="mb-0">Proyecto académico de Merwin Arciniegas Remolina ·
+            <span data-anio-actual></span>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

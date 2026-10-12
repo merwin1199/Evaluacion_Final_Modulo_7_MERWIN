@@ -1,0 +1,165 @@
+
+/* ==================================================
+   MERWIN SPORT - Estilos principales
+   Proyecto final del módulo 7
+   Autor: Merwin Arciniegas Remolina
+   ================================================== */
+
+:root {
+    --color-principal: #171717;
+    --color-acento: #ffc107;
+    --color-fondo: #f5f6f8;
+    --color-texto: #242424;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-acento) !important;
+}
+
+.hero {
+    min-height: 440px;
+    padding: 70px 15px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.62)),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80")
+        center / cover no-repeat;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+}
+
+.btn-warning {
+    font-weight: bold;
+}
+
+.imagen-carrusel {
+    height: 400px;
+    object-fit: cover;
+}
+
+.beneficio {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.beneficio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-producto {
+    height: 100%;
+    overflow: hidden;
+    border: 0;
+    border-radius: 14px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.tarjeta-producto.destacada {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-producto .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tarjeta-producto .btn {
+    margin-top: auto;
+}
+
+.precio {
+    color: #198754;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.seccion-titulo {
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.panel-contenido {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+footer {
+    margin-top: 40px;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+#mensajeCarrito,
+#resultadoContacto {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 350px;
+        padding: 55px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .imagen-carrusel {
+        height: 260px;
+    }
+
+    .tarjeta-producto img {
+        height: 190px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
